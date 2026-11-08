@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muslim Cilik - Petualangan Islami</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game">
+
+  <button id="soundToggle" class="sound-toggle">
+    🔊 SUARA ON
+  </button>
+
+  <!-- HALAMAN PEMBUKA -->
+  <section id="home" class="screen home">
+
+    <div class="sun">☀️</div>
+    <div class="moon">🌙</div>
+
+    <div class="cloud cloud-one">☁️</div>
+    <div class="cloud cloud-two">☁️</div>
+
+    <div class="home-content">
+
+      <div class="hero-characters">
+        🧒🏻 🧕🏻
+      </div>
+
+      <div class="mosque">🕌</div>
+
+      <h1>
+        MUSLIM CILIK
+        <span>ADVENTURE</span>
+      </h1>
+
+      <p class="subtitle">
+        🌟 Belajar Islam sambil bermain! 🌟
+      </p>
+
+      <div class="welcome-card">
+
+        <h2>Assalamu'alaikum! 👋</h2>
+
+        <p>Siapa nama teman kecil hari ini?</p>
+
+        <input
+          type="text"
+          id="playerName"
+          placeholder="Masukkan namamu..."
+          maxlength="15"
+        >
+
+        <button id="startBtn" class="main-btn">
+          MULAI PETUALANGAN 🚀
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="garden-decoration">
+      🌷 🌼 🌳 🌸 🌴 🌷
+    </div>
+
+  </section>
+
+  <!-- HALAMAN MENU -->
+  <section id="menu" class="screen menu hidden">
+
+    <div class="topbar">
+      <span>🌙 MUSLIM CILIK</span>
+      <span id="score">⭐ 0</span>
+    </div>
+
+    <div class="menu-header">
+
+      <div class="menu-character">🧕🏻</div>
+
+      <h1 id="welcomeName">Halo, teman!</h1>
+
+      <p>Yuk pilih dunia petualanganmu! 💖</p>
+
+    </div>
+
+    <div class="level-grid">
+
+      <button class="level-card" data-category="salam">
+        <span>👋</span>
+        <b>Salam & Doa</b>
+        <small>Belajar doa sehari-hari</small>
+      </button>
+
+      <button class="level-card" data-category="islam">
+        <span>🕌</span>
+        <b>Agama Islam</b>
+        <small>Mengenal agama kita</small>
+      </button>
+
+      <button class="level-card" data-category="ibadah">
+        <span>🤲</span>
+        <b>Dunia Ibadah</b>
+        <small>Belajar salat dan wudu</small>
+      </button>
+
+      <button class="level-card" data-category="akhlak">
+        <span>💗</span>
+        <b>Akhlak Mulia</b>
+        <small>Menjadi anak saleh</small>
+      </button>
+
+    </div>
+
+    <div class="menu-footer">
+      ⭐ Semangat belajar, teman kecil! ⭐
+    </div>
+
+  </section>
+
+  <!-- HALAMAN KUIS -->
+  <section id="quiz" class="screen quiz hidden">
+
+    <div class="topbar">
+
+      <button id="backBtn" class="small-btn">
+        ⬅ MENU
+      </button>
+
+      <span id="questionNumber">1/3</span>
+
+      <span id="quizScore">⭐ 0</span>
+
+    </div>
+
+    <div class="quiz-character">🧒🏻</div>
+
+    <div class="question-card">
+
+      <div id="questionIcon" class="question-icon">
+        🌙
+      </div>
+
+      <h2 id="questionText">
+        Apa ucapan saat bertemu teman?
+      </h2>
+
+      <p>Yuk pilih jawaban yang benar! 💕</p>
+
+    </div>
+
+    <div id="answers" class="answers"></div>
+
+    <div id="feedback" class="feedback"></div>
+
+    <button id="nextBtn" class="main-btn hidden">
+      LANJUT ➜
+    </button>
+
+  </section>
+
+  <!-- HALAMAN SELESAI -->
+  <section id="finish" class="screen finish hidden">
+
+    <div class="confetti">🎉 ⭐ 🌈 🎊</div>
+
+    <div class="trophy">🏆</div>
+
+    <h1>MASYAALLAH!</h1>
+
+    <h2>Kamu Hebat Sekali! 💖</h2>
+
+    <p id="finalMessage"></p>
+
+    <div id="finalStars" class="final-stars"></div>
+
+    <button id="againBtn" class="main-btn">
+      MAIN LAGI 🔄
+    </button>
+
+    <button id="homeBtn" class="secondary-btn">
+      KEMBALI KE MENU 🏡
+    </button>
+
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
